@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <input type="submit" value="Click to send">
+  NDA information
+  <script>
+   document.querySelector('input').onclick = function () {
+		parent.postMessage("myevent", "*")
+	};
+  </script>
+
+</body>
+</html>
